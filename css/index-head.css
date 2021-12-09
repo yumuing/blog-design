@@ -1,3 +1,7 @@
+*{
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 14px;
+}
 body{
 	margin: 0;
 	padding: 0;
@@ -13,9 +17,10 @@ head{
 	height: 3.75rem;
 	margin: 0 0 10px 0;
 	background-color: white;
+	box-shadow:0px 15px 10px -15px #000;
 	display: flex;
 	justify-content: space-around;
-	box-shadow:0px 15px 10px -15px #000;
+	
 }
 
 #head #nav #logo img{
@@ -30,7 +35,7 @@ head{
 #head #nav #middle ul li{
 	display: inline-block;
 	margin: 0 3.125rem 0 3.125rem;
-	padding: 0 0 0.9375rem 0;
+	padding: 0 0 0.625rem 0;
 	text-align: center;
 }
 #head #nav #middle ul li:hover{
@@ -66,7 +71,6 @@ head{
 }
 
 #head #nav #serch form #serch-text{
-	font-family: 'cyjianxk2c44ad663c23eba' !important;
 	width: 10.625rem;
 	height: 2.125rem;
 	border-radius: 17px 0 0 17px;
