@@ -1,0 +1,49 @@
+#content #left{
+	width: 60vw;
+	height: 93.75rem;
+	background-color: #7E8892;
+	margin-left: 10vw;
+}
+#content #left #carousel{
+	height: 25rem;
+	background-color: cadetblue;
+	margin: 1.25rem;
+}
+#content #left #classify{
+	height: 12.5rem;
+	background-color: #0FFFC1;
+	margin: 0 1.25rem 0 1.25rem;
+}
+
+#content #left #classify #classify-label{
+	height: 2.8125rem;
+	background-color: coral;
+	margin-bottom: 1.125rem;
+}
+
+#content #left #classify #classify-content{
+	height: 8.55rem;
+	background-color: #102770;
+	display: flex;
+	justify-content: space-between;
+}
+
+#content #left #classify #classify-content span{
+	width: 14rem;
+	height: 8.55rem;
+	background-color: #00FFFF;
+}
+
+#content #left #essay{
+	height: 52.5rem;
+	background-color: #5F9EA0;
+	margin: 1.25rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#content #left #essay .essays{
+	height: 9.375rem;
+	background-color: #102770;
+}

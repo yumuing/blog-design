@@ -1,0 +1,14 @@
+#content{
+	width: 100vw;
+	height: 93.75rem;
+	margin-top: 1.25rem;
+	background-color: #87CEEB;
+	display: flex;
+	justify-content: space-between;
+}
+
+#content-footer{
+	width: 100vw;
+	height: 3.75rem;
+	background-color: cornsilk;
+}

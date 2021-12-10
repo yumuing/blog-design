@@ -1,0 +1,20 @@
+#footer{
+	width: 100vw;
+	height: 6.25rem;
+	background-color: #0FFFC1;
+	margin-top: 1.25rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+#footer #footer-left,#footer-right{
+	width: 10vw;
+	height: 6.25rem;
+	background-color: #000000;
+}
+
+#footer #footer-middle{
+	width: 70vw;
+	height: 6.25rem;
+	background-color: #000000;
+}
