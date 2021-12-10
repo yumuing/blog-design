@@ -28,3 +28,19 @@
 	background-color: #102770;
 	margin-top: 1.25rem;
 }
+
+#content #right #label #label-title{
+	height: 2.8125rem;
+	background-color: #7E8892;
+}
+
+#content #right #label #label-content{
+	height: 12.8125rem;
+	margin: 0.625rem;
+	background-color: #7E0FFF;
+}
+
+#content #right #label #label-more{
+	height: 3.125rem;
+	background-color: #C0C2C4;
+}
