@@ -7,6 +7,20 @@
 	justify-content: space-between;
 }
 
+#content #left{
+	width: 60vw;
+	height: 93.75rem;
+	background-color: #7E8892;
+	margin-left: 10vw;
+}
+
+#content #right{
+	width: 20vw;
+	height: 51.25rem;
+	background-color: #FFEBA7;
+	margin-right: 8vw;
+}
+
 #content-footer{
 	width: 100vw;
 	height: 3.75rem;
