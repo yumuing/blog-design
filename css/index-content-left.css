@@ -4,33 +4,91 @@
 	margin: 1.25rem;
 }
 #content #left #classify{
-	height: 12.5rem;
-	background-color: #0FFFC1;
+	height: 13.5rem;
+	background-color: white;
 	margin: 0 1.25rem 0 1.25rem;
+	border-radius: 0.625rem;
 }
 
 #content #left #classify #classify-label{
 	height: 2.8125rem;
-	background-color: coral;
-	margin-bottom: 1.125rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#content #left #classify hr{
+	width: 95%;
+	border-top: 1px solid #7E8892;
+	text-align:left;
+	margin-left:1.25rem;
+}
+
+#content #left #classify #classify-label span{
+	margin: 1rem;
+	height: 1.25rem;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+#content #left #classify #classify-label span a{
+	margin: 0.5rem;
+	font-size: 15px;
+	font-weight: 600;
+	display: block;
+	text-decoration: none;
+	color: black;
+}
+
+#content #left #classify #classify-label span img{
+	margin: 0.625rem 0 0.9rem 0;
+	height: 15px;
+	vertical-align:middle;
 }
 
 #content #left #classify #classify-content{
 	height: 8.55rem;
-	background-color: #102770;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 #content #left #classify #classify-content span{
 	width: 14rem;
 	height: 8.55rem;
-	background-color: #00FFFF;
+	margin-bottom: 0.625rem;
+	font-size: 15px;
+	font-weight: 600;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
+#content #left #classify #classify-content #classify-1{
+	background: url(../img/classify-1.jpg);
+	background-size: 100%;
+	border-radius: 10px;
+}
+
+#content #left #classify #classify-content #classify-2{
+	background: url(../img/classify-2.jpg);
+	background-size: 100%;
+	border-radius: 10px;
+}
+
+#content #left #classify #classify-content #classify-3{
+	background: url(../img/classify-3.jpg);
+	background-size: 100%;
+	border-radius: 10px;
+}
+
+#content #left #classify #classify-content #classify-4{
+	background: url(../img/classify-4.jpg);
+	background-size: 100%;
+	border-radius: 10px;
+}
 #content #left #essay{
 	height: 52.5rem;
-	background-color: #5F9EA0;
 	margin: 1.25rem;
 	display: flex;
 	flex-direction: column;
@@ -39,5 +97,43 @@
 
 #content #left #essay .essays{
 	height: 9.375rem;
+	display: flex;
+	justify-content: center;
+}
+
+#content #left #essay 
+.essays .essays-left{
+	display: block;
+	height: 9.375rem;
+	width: 20%;
+	background-color: #7E0FFF;
+}
+
+#content #left #essay 
+.essays .essays-right{
+	display: block;
+	height: 9.375rem;
+	width: 80%;
+	background-color: #87CEEB;
+}
+
+#content #left #essay 
+.essays .essays-right .essays-title{
+	display: block;
+	height: 2rem;
+	background-color: #008000;
+}
+
+#content #left #essay 
+.essays .essays-right .essays-introduction{
+	display: block;
+	height: 5.5rem;
 	background-color: #102770;
+}
+
+#content #left #essay
+.essays .essays-right .essays-message{
+	display: block;
+	height: 1.875rem;
+	background-color: #FFEBA7;
 }
