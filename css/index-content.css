@@ -1,5 +1,5 @@
 #content{
-	height: 96rem;
+	height: 98rem;
 	margin-top: 1.25rem;
 	display: flex;
 	justify-content: space-between;
@@ -7,7 +7,7 @@
 
 #content #left{
 	width: 60vw;
-	height: 96rem;
+	height: 98rem;
 	background-color: #7E8892;
 	margin-left: 10vw;
 }

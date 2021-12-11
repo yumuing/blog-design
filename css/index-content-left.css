@@ -88,13 +88,17 @@
 	border-radius: 10px;
 }
 #content #left #essay{
-	height: 52.5rem;
+	height: 55rem;
+	background-color: #5F9EA0;
 	margin: 1.25rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
-
+#content #left #essay-order{
+	height: 3rem;
+	background-color: #C0C2C4;
+}
 #content #left #essay .essays{
 	height: 9.375rem;
 	display: flex;
