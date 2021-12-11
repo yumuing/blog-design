@@ -60,14 +60,16 @@
 	display: flex;
 	justify-content: space-around;
 }
-
+#content #left #classify #classify-content a{
+	text-decoration: none;
+	color: white;
+}
 #content #left #classify #classify-content span{
 	width: 14rem;
 	height: 8.55rem;
 	margin: 0  0.625rem 0.625rem  0.625rem ;
 	font-size: 15px;
 	font-weight: 600;
-	color: white;
 	display: flex;
 	justify-content: center;
 	align-items: center;

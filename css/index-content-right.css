@@ -114,5 +114,6 @@
 }	
 
 #content #right #label #label-more a img{
+	margin: 0.625rem 0 0.9rem 0;
 	vertical-align:middle;
 }
