@@ -1,7 +1,16 @@
 #content #left #carousel{
-	height: 25rem;
-	background-color: cadetblue;
+	height: 35rem;
+	background-color: white;
 	margin: 1.25rem;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#content #left #carousel img{
+	width: 100%;
+	height: 35rem;
+	border-radius: 0.625rem;
 }
 #content #left #classify{
 	height: 13.5rem;
@@ -25,7 +34,7 @@
 }
 
 #content #left #classify #classify-label span{
-	margin: 1rem;
+	margin: 2rem;
 	height: 1.25rem;
 	font-size: 15px;
 	font-weight: 600;
@@ -55,7 +64,7 @@
 #content #left #classify #classify-content span{
 	width: 14rem;
 	height: 8.55rem;
-	margin-bottom: 0.625rem;
+	margin: 0  0.625rem 0.625rem  0.625rem ;
 	font-size: 15px;
 	font-weight: 600;
 	color: white;
@@ -88,18 +97,21 @@
 	border-radius: 10px;
 }
 #content #left #essay{
-	height: 55rem;
-	background-color: #5F9EA0;
+	height: 57rem;
+	background-color: white;
 	margin: 1.25rem;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
+	border-radius: 0.625rem;
 }
 #content #left #essay-order{
 	height: 3rem;
-	background-color: #C0C2C4;
+	background-color: white;
+	border-radius: 0.625rem 0.625rem 0  0;
 }
 #content #left #essay .essays{
+	margin-bottom: 15px;
 	height: 9.375rem;
 	display: flex;
 	justify-content: center;
@@ -109,7 +121,7 @@
 .essays .essays-left{
 	display: block;
 	height: 9.375rem;
-	width: 20%;
+	width: 18%;
 	background-color: #7E0FFF;
 }
 
@@ -117,7 +129,7 @@
 .essays .essays-right{
 	display: block;
 	height: 9.375rem;
-	width: 80%;
+	width: 78%;
 	background-color: #87CEEB;
 }
 

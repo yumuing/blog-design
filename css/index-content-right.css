@@ -41,7 +41,7 @@
 #content #right #about #essay-condition span{
 	font-size: large;
 	font-weight: 600;
-	height: 1.25rem;
+	height: 2rem;
 	padding: 0.625rem;
 }
 
@@ -96,7 +96,10 @@
 	color: #7E8892;
 	border-radius: 5px;
 }
-
+#content #right #label-content a:hover{
+	background-color: #7E8892;
+	color: black;
+}
 #content #right #label #label-more{
 	height: 3.125rem;
 	text-align: right;
