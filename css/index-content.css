@@ -1,6 +1,6 @@
 #content{
 	height: 110rem;
-	margin-top: 1.25rem;
+	margin-top: 1.5rem;
 	display: flex;
 	justify-content: space-between;
 }
@@ -16,10 +16,23 @@
 	width: 20vw;
 	height: 51.25rem;
 	margin-right: 8vw;
+	margin-top: 1.25rem;
 	border-radius: 0.625rem;
 }
 
 #content-footer{
 	height: 3.75rem;
-	background-color: cornsilk;
+	width: 80vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#content-footer a{
+	text-decoration: none;
+	color: #7E8892;
+	padding: 10px 15px 10px 15px;
+	white-space:nowrap;
+	border-radius: 5px;
+	background-color: white;
 }

@@ -111,7 +111,20 @@
 	height: 3rem;
 	background-color: white;
 	border-radius: 0.625rem 0.625rem 0  0;
+	display: flex;
+	align-items: center;
 }
+
+#content #left #essay-order #hot-essay{
+	color: #a4b0be;
+}
+
+#content #left #essay-order span{
+	margin: 1.5rem;
+	font-size: 15px;
+	font-weight: 600;
+}
+
 #content #left #essay .essays{
 	margin-bottom: 15px;
 	height: 9.375rem;
@@ -121,37 +134,53 @@
 
 #content #left #essay 
 .essays .essays-left{
-	display: block;
 	height: 9.375rem;
-	width: 18%;
-	background-color: #7E0FFF;
+	width: 20%;
+}
+
+#content #left #essay 
+.essays .essays-left img{
+	height: 9.375rem;
+	width: 100%;
+	border-radius: 10px;
 }
 
 #content #left #essay 
 .essays .essays-right{
-	display: block;
 	height: 9.375rem;
-	width: 78%;
-	background-color: #87CEEB;
+	width: 75%;
 }
 
 #content #left #essay 
 .essays .essays-right .essays-title{
-	display: block;
 	height: 2rem;
-	background-color: #008000;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
 }
 
 #content #left #essay 
 .essays .essays-right .essays-introduction{
 	display: block;
 	height: 5.5rem;
-	background-color: #102770;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
+#content #left #essay 
+.essays .essays-right .essays-introduction p{
+	line-height: 20px;
+	margin: 0.625rem;
+}
 #content #left #essay
 .essays .essays-right .essays-message{
 	display: block;
 	height: 1.875rem;
-	background-color: #FFEBA7;
+	display: flex;
+	justify-content: space-between;
+}
+#content #left #essay
+.essays .essays-right .essays-message span{
+	margin: 0 0.625rem 0 0.625rem;
 }

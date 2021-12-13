@@ -1,5 +1,5 @@
 #footer{
-	height: 6.25rem;
+	height: 6rem;
 	background-color: white;
 	box-shadow: -2px -7px 16px -7px rgba(0,0,0,0.53);
 				-webkit-box-shadow: -2px -7px 16px -7px rgba(0,0,0,0.53);
@@ -11,13 +11,13 @@
 
 #footer #footer-left,#footer-right{
 	width: 30vw;
-	height: 5rem;
+	height: 4.75rem;
 	margin: 0  0.625rem 0 1.25rem;
 }
 
 #footer #footer-middle{
 	width: 70vw;
-	height: 6.25rem;
+	height: 6rem;
 }
 
 #footer #footer-left{
