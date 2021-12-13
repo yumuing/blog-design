@@ -36,3 +36,7 @@
 	border-radius: 5px;
 	background-color: white;
 }
+
+#content-footer a:hover{
+	color: #000000;
+}
