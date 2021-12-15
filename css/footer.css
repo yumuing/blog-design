@@ -32,6 +32,12 @@
 	color: #7E8892;
 }
 
+#footer #footer-left span{
+	margin: 1.25rem;
+	display: flex;
+	justify-content: space-between;
+}
+
 #footer #footer-right {
 	padding: 1.25rem 1.875rem 0 1.875rem;
 	display: flex;
