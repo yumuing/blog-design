@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
 		<script src="js/htmerTime.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/read-content.css"/>
 	</head>
 	<body>
 		<div id="head">
@@ -18,10 +19,10 @@
 				</span>
 				<span id="middle">
 					<ul>
-						<li><a href="#" >首页</a></li>
-						<li><a href="#" id="selected">文章</a></li>
-						<li><a href="#">归档</a></li>
-						<li><a href="#">关于</a></li>
+						<li><a href="index.html" >首页</a></li>
+						<li><a href="read.html" id="selected">文章</a></li>
+						<li><a href="archive.html">归档</a></li>
+						<li><a href="about.html">关于</a></li>
 					</ul>
 				</span>
 				<span id="serch">
@@ -35,63 +36,205 @@
 			</div>
 		</div>
 		<div id="content">
-			<div id="left">
-				
-			</div>
-				
-			</div><div id="right">
-				<div id="about">
-					<div id="admin">
-						<div>
-							<img src="img/headshots.jpg" >
-							<p>yumuing</p>
-							<p>永远相信美好的事情即将发生！</p>
-						</div>
-					</div>
-					<div id="essay-condition">
-						<span>文章：22</span>
-						<span>标签：15</span>
-						<span>分类：5</span>
-					</div>
-					<hr >
-					<div id="contact">
-						<span id="github">
-							<a href="https://github.com/yumuing"><img src="img/github.svg" ></a>
-						</span>
-						<span id="e-mail">
-							<a href="#"><img src="img/mail.svg" ></a>
-						</span>
-					</div>
+			<div id="main">
+				<span id="classify">
+					专业知识分享
+				</span>
+				<div id="title">
+					<h2>LeetCode的正确使用方法</h2>
 				</div>
-				<div id="label">
-					<div id="label-title">
-						<p>标签云</p>
+				<div id="author">
+					<span>
+						<img src="img/headshots.jpg" >
+					</span>
+					<span>
+						yumuing<br/>
+						2021-11-29/10 评论/30 点赞/624 阅读/3,042 字/
+					</span>
+				</div>
+				<hr >
+				<div id="warn">
+					<p>
+						温馨提示：<br />
+					本文最后更新于 2021-11-28，若内容或图片失效，请留言反馈。部分素材来自网络，若不小心影响到您的利益，请联系我们删除。
+					</p>
+				</div>
+				<div class="area">
+					<p>
+						LeetCode 是一个上提供一系列的算法题，并且具备多种编程语言优秀在线编辑体验。在这样的基础之上，LeetCode 对于各类题目的描述简洁易懂，题库更新极快，最重要的是它的含金量受到大众的认可，拥有庞大的用户群体，对于每一道算法题基本能够寻找到较好的解题思路。特别说明的是，该平台更为着重对于算法思路的训练，采取的并非 ACM 模式的全包全揽，而是提供一个需要实现的函数，测试用例的定义和主方法的调用等等将由系统提供。 需要训练 ACM 模式的，可以尝试牛客网的刷题模式。
+					</p>
+					<h3>刷题顺序</h3>
+					<p>
+						目前 LeetCode 对于题目的难度分类为 简单、中等、困难。并且题库规模已达两千多条，仍在更新中，这么庞大的题库，从何刷起。每次遇到各种刷题问题又找不到很好的解决方案。比方说：
+					</p>
+					<ul>
+						<li>刷题方向不明确</li>
+						<li>刷题难度定位不清晰</li>
+						<li>题目优质解析还需时间寻找</li>
+					</ul>
+					<p>首先，先简单说明一下，LeetCode 的难度水平：</p>
+					<ul>
+						<li>简单<br />
+							这个级别的题目旨在帮助大家熟悉基本技巧。通常来说，它们有一些简单粗暴的解答方法，我们需要学习的，则是应用这些小技巧来改进自己略显粗糙的解题方案。当我们随机点开一道数据结构或算法的简单题目，能在几分钟内列出最优解决方案并完成它们
+						</li>
+						<li>
+							中等<br />
+							这个级别的题目旨在锻炼大家看穿问题的能力，它们通常是一些简单题目的 “伪装” 或“变化”。使用简单粗暴的解决方法可能会导致答题超时。我们需要学习的是分辨问题，并找出正确的解题方式。随机点开一个数据结构、算法的中等题目，如果我们能找出它们掩盖的问题，并可以在半小时内写出接近最优的答案，那么我们就可以适当挑战困难级别的题目了
+						</li>
+						<li>
+							困难<br />
+							通常情况下，这个难度，45 分钟的时间几乎不足以让我们写出一个完整的答案。我们需要学习的，是确定解题的正确方向。困难级别的问题可以暂不考虑最优答案，我们从成功解决问题开始，也可以适当取消答题的时间、空间限制。 解决问题之后，才来真正思考优化问题。
+						</li>
+					</ul>
+					<p>对于刷题的方向，具体看不同类型的刷题背景，介绍如下：</p>
+					<h4>算法入门</h4>
+					<p>
+						如果是刚刚入门算法领域，想要刷刷算法题练练手的话，建议从难度为简单的算法题下手，并且，尽可能在一段时间内（一周 10 题，时间充裕 30 题）刷相同类型的算法题，直至提交成功率达到 80% 且提交代码用时尽可能达到超过 100% ，毕竟，成功率方面可能存在一些比较特殊的测试用例，无法达到 100% 。对于刷题类别的选择，可能各有各人的理解，这里提一下我的刷题顺序，不一定适合你：<br />
+						<br>
+						数组-> 链表-> 哈希表->字符串->栈与队列->树->回溯算法->贪心算法->动态规划->图论->高级数据结构<br />
+						<br>
+						如果，如果可能的话，对于之前做过的题目进行一次二刷，尽可能快速度地完成一道道算法题。锻炼解题思路的获取能与实现力。倘若已经刷完以上的算法题目且能以较快速度完成，那就可以适当选择参加 LeetCode 每周周赛，体验一下竞赛的感觉。
+					</p>
+					<h4>算法进阶</h4>
+					<p>
+						如果是已经在算法领域浸淫多年，我这篇教程就是在您面前班门弄斧了，见笑了。不过，从我稚嫩的想法出发，目前的刷题方向着重于真题的相关研究，面对就业，刷各大公司算法真题，面对竞赛，刷往年竞赛真题。LeetCode 上也有每周周赛，建议前往外网版 LeetCode 参加周赛，国内周赛竞争还不是特别激烈，可能满足不了该有的竞争压力。争取拿到 LeetCode 周赛前几就是胜利的终点了。
+					</p>
+					<h3>刷题方法</h3>
+					<p>刷题不是说看着别人的刷题思路甚至别人的代码对着一点点敲就行，最需要的是，对于每一道算法题目解题思路的理解，建议每刷完一道算法题就写相对应的笔记，不仅仅能够加深对当前算法题思路的理解，更方便后来对于同类型题目的归纳总结、融会贯通。</p>
+					<h4>LeetCode 平台刷题策略</h4>
+					<ul>
+						<li>
+							筛选完所需训练的算法问题，开始进入编辑页面，左边为问题描述，右边为代码编辑区，代码编辑区可以更改语言、测试用例、执行代码等等，对于代码的智能补全与语法高亮也有比较好的支持。
+							<img src="http://120.78.165.102:8090/upload/2021/11/image-b974b921962d4d209d43daaf6d836ea7.png" >
+						</li>
+						<li>
+							理解算法题目要求并编辑完算法代码之后，先执行代码，解决对应报错且题目出现的测试用例都能通过即可进行第一次提交。切记，不要去看题目评论与题解，独立完成一次题目的解决。
+						</li>
+						<li>
+							倘若第一次提交之后解答错误，可以在左边界面点击解答错误选项，进入相应页面，即可了解是哪个测试用例不通过，复制当前用例，返回代码编辑界面，重新编写代码，在右边底部测试用例栏内填入刚刚复制的测试用例，再次执行代码，执行无误后，再次提交即可。
+						</li>
+						<li>
+							顺利通过代码提交之后，就能知道当前代码的质量问题，如果没有达到 100% ，说明仍然存在优化的空间。倘若，一直无法得到算法优化的思路，那就可以前往题目的评论区与题解区，从而获取相对应的优化解析思路。
+						</li>
+						<li>
+							认真分析对比每一个解答的题目思路，从而学习他们解决问题的方法，做好相应笔记，真正化为己用。
+						</li>
+						<li>
+							如果对于 LeetCode 自带的编辑器不适应，需要拉取到本地进行的话，只需在代码中定义 main 函数，构造个输入用例，最后复制代码编辑区的代码作为方法函数，并在 main 函数中调用即可。
+						</li>
+					</ul>
+					<p>
+						基本对于 LeetCode 的刷题方面的问题也基本介绍完毕了。还有几点需要说明的是，珍惜每一次的提交，（执行代码不会记录）平台都会记录提交详情，并计算每一道题的提交完成率，最后，在个人资料会有相应的统计数据与擅长技能的计算。
+					</p>
+					<h4>LeetCode 周赛策略</h4>
+					<p>
+						对于LeetCode周赛方面，本人还未亲身体验过只能纸上谈兵了，筛选重要的官方说明进行展示，可能存在错漏，望周知。<br />
+						官方说明:
+					</p>
+					<ul>
+						<li>
+							竞赛的排名是根据得分和完成时间来计算，得分一致的则根据时间进行排名。每道题目都会有一个对应的分值，往往这个分值是根据题目的难度系数来评定的，难度越高分值就越大。
+						</li>
+						<li>
+							竞赛目标是在最短的时间内解出这些题目，并且保证最少的出错率。每次错误的提交会 +5 分钟 的加时惩罚直到您有一次正确的提交。完成时间等于您完成当前最后题目的时间加上加时惩罚的时间。注意：通过的题目重复提交是不会对您的竞赛结果有任何影响的。
+						</li>
+						<li>
+							竞赛期间，不需要遵循系统给出题目顺序做题。可以自由变换策略，扫读所有题目后，从最容易上手的题目开始。
+						</li>
+						<li>
+							为保障竞赛的公平性，力扣将在竞赛中 隐藏部分测试用例。当参赛者在竞赛中提交未通过时，力扣不会显示给参赛者被隐藏的错误用例。
+						</li>
+						<li>
+							违规行为：
+							<ul>
+								<li>一人使用多账号提交（力扣「中文社区 LCCN」和「美国网站 LCUS」账号属于两个账号）</li>
+								<li>多账号提交雷同代码（抄袭）</li>
+								<li>使用不正当手段影响他人竞赛的</li>
+								<li>使用不正当手段影响他人竞赛的</li>
+								<li>竞赛结束前在讨论区发布答案的</li>
+							</ul>
+						</li>
+						<li>
+							测试用例不全面，可能导致一些本不应该通过的提交显示为 “AC” 。在这种情况下，力扣会补充测试用例并 Rejudge 所有 “AC” 的提交。
+						</li>
+						<li>
+							有效提交:
+							<ul>
+								<li>
+									Hardcode 提交
+									如果参赛者存在 “Hardcode 测试用例” 行为的代码 “AC” 了题目，力扣将判定参赛者的提交为有效提交。
+								</li>
+								<li>
+									预计算提交
+									预计算结果是指：用户预先计算了部分或全部测试用例结果，并将其直接添加到至提交代码中。
+									规则及判分方式：如果参赛者的提交代码存在预计算结果的行为，我们建议参赛者附上生成预计算结果的代码。如参赛者含预计算结果的代码 “AC” 了题目，力扣将判定参赛者的提交为有效提交。
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<h3>相关链接</h3>
+					<h4>推荐解题解析网站</h4>
+					<ul>
+						<li><a href="https://programmercarl.com/">代码随想录</a></li>
+						<li><a href="https://github.com/azl397985856/leetcode">lucifer github LeetCode 题目解析</a></li>
+						<li><a href="https://github.com/labuladong/fucking-algorithm">Fucking-algrothm github LeetCode 题目解析</a></li>
+						<li><a href="https://books.halfrost.com/leetcode/">LeetCode Cookbook</a></li>
+					</ul>
+					<h4>参考文章</h4>
+					<ul>
+						<li><a href="https://programmercarl.com/">代码随想录</a></li>
+						<li><a href="https://support.leetcode-cn.com/hc/kb/article/1278066/">力扣竞赛规则</a></li>
+					</ul>
+				</div>
+				<div id="area-footer">
+					<div id="good">
+						<a href="#"><img src="img/good.svg" ></a>
+					</div>
+					<div id="label">
+						<span>
+							<span>
+								<a href="#">
+									<img src="img/label.svg" >
+									刷题笔记
+								</a>
+							</span>
+							<span>
+								<a href="#">
+									<img src="img/label.svg" >
+									LeetCode
+								</a>
+							</span>
+						</span>
+						<span>
+							<a href="#">
+								<img src="img/share.svg" >
+							</a>
+						</span>
 					</div>
 					<hr >
-					<div id="label-content">
-						<a href="#">算法</a>
-						<a href="#">SpringBoot</a>
-						<a href="#">数据库</a>
-						<a href="#">编程思想</a>
-						<a href="#">服务器</a>
-						<a href="#">SEO调优</a>
-						<a href="#">网站部署</a>
-						<a href="#">刷题笔记</a>
-						<a href="#">数学</a>
-						<a href="#">BUG</a>
-					</div>
-					<div id="label-more">
-						<a href="#"><img src="img/arrow-right.svg" >查看更多</a>
+					<div id="explain">
+						<div id="explain-main">
+							<p>
+								<img src="img/people.svg" >
+								版权归属： yumuing</p>
+							<p>
+								<img src="img/link.svg" >
+								本文链接： http://yumuing.top/archives/leetcode的正确使用方法
+							</p>
+							<p>
+								<img src="img/bill.svg" >
+								许可协议： 本文使用《署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0)》协议授权
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
 			
-		
+		</div>
+			
 		<div id="footer">
 			<div id="footer-left">
-				<span id="time">
 					<span id="htmer_time" style="color: #7E8892;"></span>
-				</span>
 				<span id="record">
 					<a href="https://beian.miit.gov.cn" rel="noopener noreferrer">粤ICP备2021166907号-1</a>
 				</span>

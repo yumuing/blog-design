@@ -1,0 +1,189 @@
+hr{
+	width: 90%;
+	border-top: 2px solid gainsboro;
+	text-align:left;
+	margin-left:2rem;
+}
+
+#content{
+	height: 315rem;
+	margin-top: 1.5rem;
+	display: flex;
+	justify-content: center;
+}
+
+#content #main{
+	height: 315rem;
+	width: 80vw;
+	background-color: white;
+	border-radius: 20px;
+}
+
+#classify{
+	line-height: 60px;
+	margin: 20px;
+	padding: 5px;
+	background-color: #0396ff;
+	color: white;
+	border-radius: 5px;
+}
+
+#title{
+	height: 1.5625rem;
+}
+
+#title h2{
+	font-size:1.5625rem;
+	text-align: center;
+}
+
+#author{
+	height:4.375rem;
+	display: flex;
+	justify-content: left;
+}
+
+#author span{
+	height: 2.1875rem;
+	margin: 30px 0 30px 30px;
+	color: #a1a2a4;
+}
+
+#author span img{
+	height: 2.1875rem;
+	border-radius: 1.25rem;
+}
+
+#warn {
+	width: 80%;
+	height: 5.9375rem;
+	background-color: #fffcef;
+	border:1px solid #ffbb76;
+	border-radius: 10px;
+	margin: 30px auto;
+}
+
+#warn p{
+	padding: 10px 0 10px 30px;
+	font-weight: bold;
+	color: #db7c22;
+}
+
+.area{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.area p{
+	font-size: 17px;
+	color: #a1a2a4;
+	line-height: 30px;
+	text-indent: 40px; 
+	font-weight: 600;
+}
+
+.area h3{
+	font-size: 25px;
+	font-weight: bolder;
+	color: cornflowerblue;
+}
+
+.area h4{
+	font-size: 20px;
+	font-weight: bolder;
+	color: aqua;
+	text-indent: 20px;
+}
+
+.area ul{
+	list-style-type:disc;
+	color: #a1a2a4;
+}
+
+.area ul li{
+	line-height: 30px;
+	font-weight: 600;
+	font-size: 17px;
+	margin-top: 10px;
+}
+
+.area img{
+	width: 90%;
+	border-radius: 10px;
+}
+
+.area a{
+	line-height: 30px;
+	font-weight: 600;
+	font-size: 17px;
+	margin-top: 10px;
+	color: #a1a2a4;
+}
+
+#area-footer{
+	height: 20rem;
+}
+
+#area-footer hr{
+	width: 90%;
+	border-top: 1px solid gainsboro;
+	margin: 0 auto;
+}
+
+#area-footer #good{
+	height: 7rem;
+	display: flex;
+	justify-content: center;
+}
+
+#area-footer #good img{
+	height: 30px;
+	padding: 20px;
+	border-radius: 20px;
+	background-color: #f56c6c;
+}
+
+#label{
+	height: 3.5rem;
+	width: 95%;
+	display: flex;
+	justify-content: space-between;
+}
+
+#label span{
+	height: 2rem;
+	margin: 20px;
+}
+
+#label span span a{
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #a1a2a4;
+}
+
+#label span span a img{
+	height: 10px;
+}
+
+#explain {
+	height: 10rem;
+	width: 80%;
+	background-color: #f2f6fc;
+	margin: 0 auto;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+
+#explain  #explain-main{
+	padding: 10px 0 10px 30px;
+}
+
+#explain  #explain-main img{
+	vertical-align:middle;
+}
+
+#explain  #explain-main p{
+	color: #a1a2a4;
+	font-size: 16px;
+}
+
