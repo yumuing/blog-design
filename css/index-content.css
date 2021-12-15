@@ -1,5 +1,5 @@
 #content{
-	height: 110rem;
+	height: 105rem;
 	margin-top: 1.5rem;
 	display: flex;
 	justify-content: space-between;
@@ -7,7 +7,7 @@
 
 #content #left{
 	width: 60vw;
-	height: 110rem;
+	height: 105rem;
 	margin-left: 10vw;
 	border-radius: 10px;
 }

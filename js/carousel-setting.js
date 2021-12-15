@@ -1,6 +1,6 @@
 new SimSwiper("#swiper-demo", {
 	autoplay: 3000,
-	duration: 500,
+	duration: 1000,
 	easing: 'ease',
 	button: {
 		prev: "#prev", // 前进后退按钮

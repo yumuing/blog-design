@@ -1,13 +1,3 @@
-*{
-	font-family: 'Times New Roman', Times, serif;
-	font-size: 14px;
-}
-body{
-	margin: 0;
-	padding: 0;
-	background-color: #efefef;
-}
-
 head{
 	width: 100vw;
 	height: 5rem;
@@ -35,14 +25,21 @@ head{
 	list-style:none;
 }
 
+
+
 #head #nav #middle ul li{
 	display: inline-block;
 	margin: 0 3.125rem 0 3.125rem;
-	padding: 0 0 0.625rem 0;
 	text-align: center;
 }
-#head #nav #middle ul li:hover{
+
+#head #nav #middle ul li #selected{
 	border-bottom: 5px solid #a4b0be;
+	color: #a4b0be;
+}
+
+#head #nav #middle ul li a:hover{
+	color: #a4b0be;
 }
 #head #nav #middle ul li a{
 	color: black;
@@ -51,9 +48,12 @@ head{
 	font-size: large;
 }
 
+
+
 #head #nav #serch{
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 #head #nav #serch form{

@@ -1,0 +1,30 @@
+#content{
+	height: 105rem;
+	margin-top: 1.5rem;
+	display: flex;
+	justify-content: center;
+}
+
+#content #main{
+	height: 105rem;
+	width: 80vw;
+	background-color: white;
+	border-radius: 20px;
+}
+
+#content #main h2{
+	text-align: center;
+	margin: 30px;
+	font-size: 20px;
+}
+
+#content #main hr{
+	width: 80%;
+}
+
+#content #main p{
+	margin: 30px 10% 0 10%;
+	width: 80%;
+	font-size: 16px;
+}
+

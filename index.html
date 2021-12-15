@@ -3,13 +3,14 @@
 	<head>
 		<meta charset="utf-8">
 		<title>yumuing's blog</title>
-		<link rel="stylesheet" type="text/css" href="css/head.css"/>
 		<link rel="icon" href="img/logo-ico.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/head.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index-content.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index-content-left.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index-content-right.css"/>
 		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
 		<link rel="stylesheet" type="text/css" href="css/carousel.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
 		<script type="text/javascript" src="js/carousel.js"></script>
 		<script src="js/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/head.js" type="text/javascript" charset="utf-8"></script>
@@ -23,10 +24,10 @@
 				</span>
 				<span id="middle">
 					<ul>
-						<li><a href="#">首页</a></li>
+						<li><a href="index.html" id="selected">首页</a></li>
 						<li><a href="#">文章</a></li>
-						<li><a href="#">归档</a></li>
-						<li><a href="#">关于</a></li>
+						<li><a href="archive.html">归档</a></li>
+						<li><a href="about.html">关于</a></li>
 					</ul>
 				</span>
 				<span id="serch">
@@ -104,15 +105,19 @@
 							
 						</div>
 						<div class="essays-right">
-							<div class="essays-title">
-								网站部署上线						
-							</div>
-							<div class="essays-introduction">
-								<p>
-									一个网站的上线往往经历开发、试运行、部署调优。虽说，一个网站的开发运行是万楼之基，但，无法部署运行的网站是绝对畸形的产品，
-									甚至，谈不上是一个产品。本文将简单介绍一个网站的部署及其调优的基本流程。
-								</p>
-							</div>
+							<a href="#">
+								
+								<div class="essays-title">
+									网站部署上线						
+								</div>
+								<div class="essays-introduction">
+									<p>
+										一个网站的上线往往经历开发、试运行、部署调优。虽说，一个网站的开发运行是万楼之基，但，无法部署运行的网站是绝对畸形的产品，
+										甚至，谈不上是一个产品。本文将简单介绍一个网站的部署及其调优的基本流程。
+									</p>
+								</div>
+							</a>
+						
 							<div class="essays-message">
 								<span>
 									2021-10-13 / 980 阅读 / 17 评论 / 128 点赞
@@ -127,16 +132,20 @@
 						<div class="essays-left">
 							<img src="img/essays-left-2.png" >
 						</div>
-						<div class="essays-right">
-							<div class="essays-title">
-								Figma动画					
-							</div>
-							<div class="essays-introduction">
-								<p>
-								Figma是一个协作式 UI 设计工具，最大的特点是基于浏览器可以实现跨平台（Win,、Chrome、Linux、Mac）设计。
-								和同作为UI设计的Sketch相比，figma不仅有完胜Sketch的文件处理速度，同时也支持插件开发，通过Figma API也可以与第三方工具集成。
-								</p>
-							</div>
+						
+							<div class="essays-right">
+								<a href="#">
+								<div class="essays-title">
+									Figma动画					
+								</div>
+									<div class="essays-introduction">
+										<p>
+										Figma是一个协作式 UI 设计工具，最大的特点是基于浏览器可以实现跨平台（Win,、Chrome、Linux、Mac）设计。
+										和同作为UI设计的Sketch相比，figma不仅有完胜Sketch的文件处理速度，同时也支持插件开发，通过Figma API也可以与第三方工具集成。
+										</p>
+									</div>
+								</a>
+							
 							<div class="essays-message">
 									<span>
 										2021-11-22 / 720 阅读 / 3 评论 / 55 点赞
@@ -152,15 +161,18 @@
 							<img src="img/essays-left-3.jpg" >
 						</div>
 						<div class="essays-right">
-							<div class="essays-title">
-								排序算法：选择法与冒泡法的简单认识					
-							</div>
-							<div class="essays-introduction">
-								<p>
-								在进行很多便捷算法之前总是要实现对象的有序化，而这就将使用到排序相关的算法，即使目前诸多高级语言已然完成对于排序算法的封装，
-								用户只需导入对应库文件即可调用排序算法完成排序，无需手写排序算法，但具体的排序算法的选择就必须对于排序算法有所认识。本文就将介绍两个简单的排序算法：选择排序与冒泡排序。
-								</p>
-							</div>
+							<a href="#">
+								<div class="essays-title">
+									排序算法：选择法与冒泡法的简单认识					
+								</div>
+								<div class="essays-introduction">
+									<p>
+									在进行很多便捷算法之前总是要实现对象的有序化，而这就将使用到排序相关的算法，即使目前诸多高级语言已然完成对于排序算法的封装，
+									用户只需导入对应库文件即可调用排序算法完成排序，无需手写排序算法，但具体的排序算法的选择就必须对于排序算法有所认识。
+									</p>
+								</div>
+							</a>
+							
 							<div class="essays-message">
 								<span>
 									2021-12-1 / 618 阅读 / 10 评论 / 62 点赞
@@ -176,16 +188,19 @@
 							<img src="img/essays-left-4.jpg" >
 						</div>
 						<div class="essays-right">
-							<div class="essays-title">
-								2021-11-25
-								Leetcode 刷题笔记一：二分法					
-							</div>
-							<div class="essays-introduction">
-								<p>
-									折半查找法也称为二分查找法，它充分利用了元素间的次序关系，采用分治策略，
-									可在最坏的情况下用 O(log n) 完成搜索任务。
-								</p>
-							</div>
+							<a href="#">
+								<div class="essays-title">
+									2021-11-25
+									Leetcode 刷题笔记一：二分法					
+								</div>
+								<div class="essays-introduction">
+									<p>
+										折半查找法也称为二分查找法，它充分利用了元素间的次序关系，采用分治策略，
+										可在最坏的情况下用 O(log n) 完成搜索任务。
+									</p>
+								</div>
+							</a>
+							
 							<div class="essays-message">
 								<span>
 									2021-11-25 / 320 阅读 / 3 评论 / 55 点赞
@@ -201,17 +216,20 @@
 							<img src="img/essays-left-5.jpg" >
 						</div>
 						<div class="essays-right">
-							<div class="essays-title">
-								LeetCode 的正确使用方法				
-							</div>
-							<div class="essays-introduction">
-								<p>
-									LeetCode 是一个上提供一系列的算法题，并且具备多种编程语言优秀在线编辑体验。
-									在这样的基础之上，LeetCode 对于各类题目的描述简洁易懂，题库更新极快，
-									最重要的是它的含金量受到大众的认可，拥有庞大的用户群体，对于每一道算法题基本能够寻找到较好的解题思路。
-								</p>
-								
-							</div>
+							<a href="#">
+								<div class="essays-title">
+									LeetCode 的正确使用方法				
+								</div>
+								<div class="essays-introduction">
+									<p>
+										LeetCode 是一个上提供一系列的算法题，并且具备多种编程语言优秀在线编辑体验。
+										在这样的基础之上，LeetCode 对于各类题目的描述简洁易懂，题库更新极快，
+										最重要的是它的含金量受到大众的认可，拥有庞大的用户群体，对于每一道算法题基本能够寻找到较好的解题思路。
+									</p>
+									
+								</div>
+							</a>
+							
 							<div class="essays-message">
 								<span>
 									2021-11-29 / 218 阅读 / 5 评论 / 23 点赞
