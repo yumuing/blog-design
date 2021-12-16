@@ -6,14 +6,14 @@ hr{
 }
 
 #content{
-	height: 315rem;
+	height: 321rem;
 	margin-top: 1.5rem;
 	display: flex;
 	justify-content: center;
 }
 
 #content #main{
-	height: 315rem;
+	height: 320rem;
 	width: 80vw;
 	background-color: white;
 	border-radius: 20px;
@@ -121,7 +121,7 @@ hr{
 }
 
 #area-footer{
-	height: 20rem;
+	height: 25rem;
 }
 
 #area-footer hr{
@@ -187,3 +187,17 @@ hr{
 	font-size: 16px;
 }
 
+#switch{
+	display: flex;
+	justify-content: space-around;
+}
+
+#switch span a{
+	background-color: #0396ff;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 18px;
+	color: white;
+	border: 1px solid #a1a2a4;
+}
+	
