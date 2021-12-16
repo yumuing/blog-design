@@ -8,7 +8,10 @@
 		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
 		<link rel="stylesheet" type="text/css" href="css/timeline.css"/>
+		<link rel="stylesheet" type="text/css" href="css/read-archive-toTop-Bottom.css"/>
 		<script src="js/htmerTime.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/toTop-Bottom.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<div id="head">
@@ -42,114 +45,84 @@
 				  <li class='work'>
 				    <input class='radio' id='work14' name='works' type='radio' checked>
 				    <div class="relative">
-				      <label for='work14'>https是如何保证数据传输的安全</label>
-				      <span class='date'>2021-03-05</span>
+				      <label for='work14'>前后端分离：分离开发，一体发布</label>
+				      <span class='date'>2021-05-31</span>
 				      <span class='circle'></span>
 				    </div>
 				    <div class='content'>
 				      <p>
-				        HTTP是明文传输的，也就意味着，介于发送端、接收端中间的任意节点都可以知道你们传输的内容是什么。这些节点可能是路由器、代理等。
-				        
-				        举个最常见的例子，用户登陆。用户输入账号，密码，采用HTTP的话，只要在代理服务器上做点手脚就可以拿到你的密码了。
-				        
-				        用户登陆 --> 代理服务器（做手脚）--> 实际授权服务器
-				        
-				        在发送端对密码进行加密？没用的，虽然别人不知道你原始密码是多少，但能够拿到加密后的账号密码，照样能登陆。
+				        自从应用前后端分离开发模式以来，分工明确，合作愉快。最近后端一般是用 NET Core 开发，前端使用的 Vue 技术栈。如果偶尔后端人力不足，有点数据库基础的前端工程师还可以拿 Node.js 帮着实现一部分后端需求。移动端的 Android 团队已经精简得只剩下一个人了，只需要维护一个框架应用，处理点硬件调用，把移动端页面往里一套就能解决问题。
 				      </p>
 				    </div>
 				  </li>
 				  <li class='work'>
 				    <input class='radio' id='work13' name='works' type='radio' checked>
 				    <div class="relative">
-				      <label for='work13'>https是如何保证数据传输的安全</label>
-				      <span class='date'>2021-03-05</span>
+				      <label for='work13'>常见登录鉴权方案</label>
+				      <span class='date'>2021-04-31</span>
 				      <span class='circle'></span>
 				    </div>
 				    <div class='content'>
 				      <p>
-				        HTTP是明文传输的，也就意味着，介于发送端、接收端中间的任意节点都可以知道你们传输的内容是什么。这些节点可能是路由器、代理等。
-				        
-				        举个最常见的例子，用户登陆。用户输入账号，密码，采用HTTP的话，只要在代理服务器上做点手脚就可以拿到你的密码了。
-				        
-				        用户登陆 --> 代理服务器（做手脚）--> 实际授权服务器
-				        
-				        在发送端对密码进行加密？没用的，虽然别人不知道你原始密码是多少，但能够拿到加密后的账号密码，照样能登陆。
+				        说起鉴权大家应该都很熟悉，不过作为前端开发来讲，鉴权的流程大头都在后端小哥那边，本文的目的就是为了让大家了解一下常见的鉴权的方式和原理。
 				      </p>
 				    </div>
 				  </li>
 				  <li class='work'>
 				    <input class='radio' id='work12' name='works' type='radio' checked>
 				    <div class="relative">
-				      <label for='work12'>https是如何保证数据传输的安全</label>
-				      <span class='date'>2021-03-05</span>
+				      <label for='work12'>跨域请求产生错误的原因及处理方法</label>
+				      <span class='date'>2021-04-15</span>
 				      <span class='circle'></span>
 				    </div>
 				    <div class='content'>
 				      <p>
-				        HTTP是明文传输的，也就意味着，介于发送端、接收端中间的任意节点都可以知道你们传输的内容是什么。这些节点可能是路由器、代理等。
-				        
-				        举个最常见的例子，用户登陆。用户输入账号，密码，采用HTTP的话，只要在代理服务器上做点手脚就可以拿到你的密码了。
-				        
-				        用户登陆 --> 代理服务器（做手脚）--> 实际授权服务器
-				        
-				        在发送端对密码进行加密？没用的，虽然别人不知道你原始密码是多少，但能够拿到加密后的账号密码，照样能登陆。
+				        如果你在开发网站时曾经尝试通过框架或是浏览器的 fetch、XHR 请求过外部 API 的话，那么一定遇到过跨域请求，还有那个触目惊心的 CORS 错误信息；今天咱们来讨论跨域问题的原因以及解决方法。
 				      </p>
 				    </div>
 				  </li>
 				  <li class='work'>
 				    <input class='radio' id='work11' name='works' type='radio' checked>
 				    <div class="relative">
-				      <label for='work11'>https是如何保证数据传输的安全</label>
-				      <span class='date'>2021-03-05</span>
+				      <label for='work11'>Web 安全简明入门指南</label>
+				      <span class='date'>2021-04-05</span>
 				      <span class='circle'></span>
 				    </div>
 				    <div class='content'>
 				      <p>
-				        HTTP是明文传输的，也就意味着，介于发送端、接收端中间的任意节点都可以知道你们传输的内容是什么。这些节点可能是路由器、代理等。
-				        
-				        举个最常见的例子，用户登陆。用户输入账号，密码，采用HTTP的话，只要在代理服务器上做点手脚就可以拿到你的密码了。
-				        
-				        用户登陆 --> 代理服务器（做手脚）--> 实际授权服务器
-				        
-				        在发送端对密码进行加密？没用的，虽然别人不知道你原始密码是多少，但能够拿到加密后的账号密码，照样能登陆。
+				        Web 安全已经是 Web 开发中一个重要的组成部分，而许多程序猿往往希望专注于程序的实现，而忽略了信息安全的实质。如果没有严谨地考虑到信息安全问题，等出了乱子之后反而会造成更严重的损失。所以要在开发网络应用时更注重 Web 安全，甚至努力成为一个白帽黑客。
 				      </p>
 				    </div>
 				  </li>
 				  <li class='work'>
 				    <input class='radio' id='work10' name='works' type='radio' checked>
 				    <div class="relative">
-				      <label for='work10'>https是如何保证数据传输的安全</label>
-				      <span class='date'>2021-03-05</span>
+				      <label for='work10'>Web 架构设计入门</label>
+				      <span class='date'>2021-03-25</span>
 				      <span class='circle'></span>
 				    </div>
 				    <div class='content'>
 				      <p>
-				        HTTP是明文传输的，也就意味着，介于发送端、接收端中间的任意节点都可以知道你们传输的内容是什么。这些节点可能是路由器、代理等。
-				        
-				        举个最常见的例子，用户登陆。用户输入账号，密码，采用HTTP的话，只要在代理服务器上做点手脚就可以拿到你的密码了。
-				        
-				        用户登陆 --> 代理服务器（做手脚）--> 实际授权服务器
-				        
-				        在发送端对密码进行加密？没用的，虽然别人不知道你原始密码是多少，但能够拿到加密后的账号密码，照样能登陆。
+				        Web 应用架构包括所有软件模块和组件、内部和外部系统、以及构成应用程序的之间的交互。除了解决开发开始时的所有业务需求，架构还能够确保满足所有非功能性要求（例如可维护性和敏捷性）。
 				      </p>
 				    </div>
 				  </li>
 				  <li class='work'>
 				    <input class='radio' id='work9' name='works' type='radio' checked>
 				    <div class="relative">
-				      <label for='work9'>https是如何保证数据传输的安全</label>
-				      <span class='date'>2021-03-05</span>
+				      <label for='work9'>实现SSM开发房屋租赁系统</label>
+				      <span class='date'>2021-03-10</span>
 				      <span class='circle'></span>
 				    </div>
 				    <div class='content'>
 				      <p>
-				        HTTP是明文传输的，也就意味着，介于发送端、接收端中间的任意节点都可以知道你们传输的内容是什么。这些节点可能是路由器、代理等。
-				        
-				        举个最常见的例子，用户登陆。用户输入账号，密码，采用HTTP的话，只要在代理服务器上做点手脚就可以拿到你的密码了。
-				        
-				        用户登陆 --> 代理服务器（做手脚）--> 实际授权服务器
-				        
-				        在发送端对密码进行加密？没用的，虽然别人不知道你原始密码是多少，但能够拿到加密后的账号密码，照样能登陆。
+				       本系统基于SSM（spring+springmvc+mybatis）框架实现开发，前端基于BootStrap框架实现，数据库采用MYSQL，开发工具为IDEA或ECLIPSE。
+				       
+				       本系统功能完整，界面简洁大方，运行无误，比较适合做毕业设计和课程设计使用。
+				       
+				       本系统主要有两个角色，一个是物业管理员，一个是租赁方：
+				       
+				       物业管理员登陆：可以实现房屋信息管理，租赁和合同信息管理，申请租赁房屋管理，租金管理，日程管理，租赁用户管理，故障报修管理。
 				      </p>
 				    </div>
 				  </li>
@@ -157,65 +130,49 @@
 				  <li class='work'>
 				    <input class='radio' id='work8' name='works' type='radio' checked>
 				    <div class="relative">
-				      <label for='work8'>https是如何保证数据传输的安全</label>
-				      <span class='date'>2021-03-05</span>
+				      <label for='work8'>SpringCloud系统架构及演变</label>
+				      <span class='date'>2021-02-05</span>
 				      <span class='circle'></span>
 				    </div>
 				    <div class='content'>
 				      <p>
-				        HTTP是明文传输的，也就意味着，介于发送端、接收端中间的任意节点都可以知道你们传输的内容是什么。这些节点可能是路由器、代理等。
-				        
-				        举个最常见的例子，用户登陆。用户输入账号，密码，采用HTTP的话，只要在代理服务器上做点手脚就可以拿到你的密码了。
-				        
-				        用户登陆 --> 代理服务器（做手脚）--> 实际授权服务器
-				        
-				        在发送端对密码进行加密？没用的，虽然别人不知道你原始密码是多少，但能够拿到加密后的账号密码，照样能登陆。
-				      </p>
+				        Web应用程序发展的早期，大部分web工程(包含前端页面,web层代码,service层代码,dao层代码)是将所有的功能模块,打包到一起并放在一个web容器中运行。
+					  </p>
 				    </div>
 				  </li>
 				  <li class='work'>
 				    <input class='radio' id='work7' name='works' type='radio' checked>
 				    <div class="relative">
-				      <label for='work7'>https是如何保证数据传输的安全</label>
-				      <span class='date'>2021-03-05</span>
+				      <label for='work7'>什么是SOA？什么是微服务？SOA和微服务有什么区别？</label>
+				      <span class='date'>2021-01-25</span>
 				      <span class='circle'></span>
 				    </div>
 				    <div class='content'>
 				      <p>
-				        HTTP是明文传输的，也就意味着，介于发送端、接收端中间的任意节点都可以知道你们传输的内容是什么。这些节点可能是路由器、代理等。
-				        
-				        举个最常见的例子，用户登陆。用户输入账号，密码，采用HTTP的话，只要在代理服务器上做点手脚就可以拿到你的密码了。
-				        
-				        用户登陆 --> 代理服务器（做手脚）--> 实际授权服务器
-				        
-				        在发送端对密码进行加密？没用的，虽然别人不知道你原始密码是多少，但能够拿到加密后的账号密码，照样能登陆。
-				      </p>
+				        SOA（Service-Oriented Architecture，面向服务的架构）是一种高层级的架构设计理念，可通过在网络上使用基于通用通信语言的服务接口，让软件组件可重复使用。
+					  </p>
 				    </div>
 				  </li>
 				  <li class='work'>
 				    <input class='radio' id='work6' name='works' type='radio' checked>
 				    <div class="relative">
-				      <label for='work6'>https是如何保证数据传输的安全</label>
-				      <span class='date'>2021-03-05</span>
+				      <label for='work6'>网页登录拦截器是如何运作的</label>
+				      <span class='date'>2021-01-15</span>
 				      <span class='circle'></span>
 				    </div>
 				    <div class='content'>
 				      <p>
-				        HTTP是明文传输的，也就意味着，介于发送端、接收端中间的任意节点都可以知道你们传输的内容是什么。这些节点可能是路由器、代理等。
-				        
-				        举个最常见的例子，用户登陆。用户输入账号，密码，采用HTTP的话，只要在代理服务器上做点手脚就可以拿到你的密码了。
-				        
-				        用户登陆 --> 代理服务器（做手脚）--> 实际授权服务器
-				        
-				        在发送端对密码进行加密？没用的，虽然别人不知道你原始密码是多少，但能够拿到加密后的账号密码，照样能登陆。
-				      </p>
+				       SpringMVC的处理器拦截器类似于Servlet开发中的过滤器Filter,用于对处理器进行预处理和后处理。
+				       
+				       拦截器和过滤器的区别在于拦截器使AOP思想的具体应用
+					   </p>
 				    </div>
 				  </li>
 				  <li class='work'>
 				    <input class='radio' id='work5' name='works' type='radio' checked>
 				    <div class="relative">
 				      <label for='work5'>https是如何保证数据传输的安全</label>
-				      <span class='date'>2021-03-05</span>
+				      <span class='date'>2021-01-05</span>
 				      <span class='circle'></span>
 				    </div>
 				    <div class='content'>
@@ -234,7 +191,7 @@
 				    <input class='radio' id='work4' name='works' type='radio'>
 				    <div class="relative">
 				      <label for='work4'>SpringBoot 集成ShardingSphere ShardingJDBC</label>
-				      <span class='date'>11 May 2013</span>
+				      <span class='date'>2020-10-30</span>
 				      <span class='circle'></span>
 				    </div>
 				    <div class='content'>
@@ -250,7 +207,7 @@
 				    <input class='radio' id='work3' name='works' type='radio'>
 				    <div class="relative">
 				      <label for='work3'>SpringBoot集成分布式任务调度xxl-job</label>
-				      <span class='date'>10 May 2013</span>
+				      <span class='date'>2020-10-25</span>
 				      <span class='circle'></span>
 				    </div>
 				    <div class='content'>
@@ -265,7 +222,7 @@
 				    <input class='radio' id='work2' name='works' type='radio'>
 				    <div class="relative">
 				      <label for='work2'>SpringBoot集成分布式对象存储(分布式文件)MinIO</label>
-				      <span class='date'>09 May 2013</span>
+				      <span class='date'>2020-10-11</span>
 				      <span class='circle'></span>
 				    </div>
 				    <div class='content'>
@@ -283,7 +240,7 @@
 				    <input class='radio' id='work1' name='works' type='radio'>
 				    <div class="relative">
 				      <label for='work1'>网站建站完成</label>
-				      <span class='date'>08 May 2013</span>
+				      <span class='date'>2020-10-06</span>
 				      <span class='circle'></span>
 				    </div>
 				    <div class='content'>
@@ -295,10 +252,14 @@
 				  </li>
 				</ul>
 			</div>
-				
+		</div>
 			
-			</div>
-			
+		<div id="toTop">
+			<img src="img/to-top.svg" id="top-img">
+		</div>
+		<div id="toBottom">
+			<img src="img/to-bottom.svg" id="bottom-img">
+		</div>
 		
 		<div id="footer">
 			<div id="footer-left">

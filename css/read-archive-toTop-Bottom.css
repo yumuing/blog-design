@@ -1,0 +1,15 @@
+#toTop,#toBottom{
+	width: 35px;
+	height: 35px;
+	background-color: white;
+	bottom: 150px;
+	right: 50px;
+	border-radius: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+}
+#toTop img,#toBottom img{
+	height: 20px;
+}

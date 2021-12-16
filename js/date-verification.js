@@ -28,7 +28,7 @@ $("#register").click(function(){
 	}
 	else{
 		if(pass.val() == aPass.val()){
-			var postData = "mailto:1714935263@qq.com?subject=注册信息" + "&body="+" name=" + name.val() + " email=" + mail.val() + " password=" + pass.val();
+			var postData = "mailto:yuzhe780@126.com?subject=注册信息" + "&body="+" name=" + name.val() + " email=" + mail.val() + " password=" + pass.val();
 			$("#register").attr("href",postData);
 		}
 		else{

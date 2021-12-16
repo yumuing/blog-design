@@ -8,8 +8,11 @@
 		<link rel="stylesheet" type="text/css" href="css/index-content.css"/>
 		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
-		<script src="js/htmerTime.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/read-archive-toTop-Bottom.css"/>
 		<link rel="stylesheet" type="text/css" href="css/read-content.css"/>
+		<script src="js/htmerTime.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/toTop-Bottom.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<div id="head">
@@ -105,7 +108,9 @@
 					<ul>
 						<li>
 							筛选完所需训练的算法问题，开始进入编辑页面，左边为问题描述，右边为代码编辑区，代码编辑区可以更改语言、测试用例、执行代码等等，对于代码的智能补全与语法高亮也有比较好的支持。
-							<img src="http://120.78.165.102:8090/upload/2021/11/image-b974b921962d4d209d43daaf6d836ea7.png" >
+							<div class="jqzoom">
+								<img src="http://120.78.165.102:8090/upload/2021/11/image-b974b921962d4d209d43daaf6d836ea7.png" jqimg="images/pro_img/blue_one_big.jpg">
+							</div>
 						</li>
 						<li>
 							理解算法题目要求并编辑完算法代码之后，先执行代码，解决对应报错且题目出现的测试用例都能通过即可进行第一次提交。切记，不要去看题目评论与题解，独立完成一次题目的解决。
@@ -237,9 +242,15 @@
 					</span>
 				</div>	
 			</div>
-			
 		</div>
-			
+		
+		<div id="toTop">
+			<img src="img/to-top.svg" id="top-img">
+		</div>
+		<div id="toBottom">
+			<img src="img/to-bottom.svg" id="bottom-img">
+		</div>
+		
 		<div id="footer">
 			<div id="footer-left">
 					<span id="htmer_time" style="color: #7E8892;"></span>
