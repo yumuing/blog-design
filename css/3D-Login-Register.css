@@ -43,11 +43,13 @@ h6 span {
 .full-height {
     min-height: 100vh;
 }
+/* 设置被选中 */
 [type="checkbox"]:checked,
 [type="checkbox"]:not(:checked) {
     position: absolute;
     left: -9999px;
 }
+/* 设置被选中样式 */
 .checkbox:checked + label,
 .checkbox:not(:checked) + label {
     position: relative;
@@ -61,6 +63,8 @@ h6 span {
     cursor: pointer;
     background-color: #ffeba7;
 }
+
+/* 在checkbox:checked类下的checked和label之前执行｛｝里面的内容*/
 .checkbox:checked + label:before,
 .checkbox:not(:checked) + label:before {
     position: absolute;
@@ -84,6 +88,7 @@ h6 span {
     transform: translateX(44px) rotate(-270deg);
 }
 
+/* 设置卡片位置 */
 .card-3d-wrap {
     position: relative;
     width: 440px;
@@ -94,6 +99,7 @@ h6 span {
     perspective: 800px;
     margin-top: 60px;
 }
+/* 卡片主体外盒子，设置阴影等样式 */
 .card-3d-wrapper {
     width: 100%;
     height: 100%;
@@ -108,6 +114,8 @@ h6 span {
 	box-shadow:  8px 8px 18px #7e8892,
 	             -8px -8px 18px #cad8ea;
 }
+
+/* 卡片主体，设置背景等 */
 .card-front,
 .card-back {
 	width: 100%;
@@ -130,12 +138,15 @@ h6 span {
 	border: 1px solid #ffffff21;
 	border-radius: 40px;
 }
+/* 背面的注册设置翻转 */
 .card-back {
     transform: rotateY(180deg);
 }
+/* 正面登录设置翻转 */
 .checkbox:checked ~ .card-3d-wrap .card-3d-wrapper {
     transform: rotateY(180deg);
 }
+/* 中间输入区域 */
 .center-wrap {
     position: absolute;
     width: 100%;
@@ -147,12 +158,15 @@ h6 span {
     display: block;
 }
 
+/* 用户名输入框位置 */
 .form-group {
     position: relative;
     display: block;
     margin: 0;
     padding: 0;
 }
+
+/* 输入框样式 */
 .form-style {
     padding: 13px 20px;
     padding-left: 20px;
@@ -169,25 +183,21 @@ h6 span {
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
 }
+
+/* 输入框获取焦点样式 */
 .form-style:focus,
 .form-style:active {
     border: none;
     outline: none;
     box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.2);
 }
-
-.fa{
-    position: absolute;
-    top: 0;
-    left: 18px;
-    height: 48px;
-    font-size: 24px;
-    line-height: 48px;
-    text-align: left;
-    color: #A4B0BE;
-    -webkit-transition: all 200ms linear;
-    transition: all 200ms linear;
-}
+/* 
+:-ms-input-placeholder伪类表示表单元素的占位符文本。
+这允许web开发人员和主题设计人员定制占位符文本的外观
+在该字段具有焦点前，占位符文本以指定的样式显示，
+暗示可以向该字段输入字符。当该字段获得焦点时，
+它将变回输入字段的正常样式，占位符文本消失。 
+*/
 .form-group input:-ms-input-placeholder {
     opacity: 0.7;
     -webkit-transition: all 200ms linear;
@@ -229,6 +239,7 @@ h6 span {
     transition: all 200ms linear;
 }
 
+/* 登录注册按钮样式 */
 .btn {
     border-radius: 4px;
     height: 44px;
@@ -265,67 +276,10 @@ h6 span {
                 inset -5px -5px 10px #c6d5e6;
 }
 
-.logo {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    display: block;
-    z-index: 100;
-    transition: all 250ms linear;
-}
-.logo img {
-    height: 26px;
-    width: auto;
-    display: block;
-}
 label {
     margin-bottom: 0;
     cursor: pointer;
 }
 label:hover {
     color: skyblue;
-}
-
-.bgk {
- 
-  background-color: #151823;
-  animation: textColor 10s ease infinite;
-}
-.bgk:after {
-  position: absolute;
-  content: "";
-  top: 1vw;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  transform: scale(0.78);
-  -webkit-filter: blur(2vw);
-  background: linear-gradient(270deg, #0fffc1, #7e0fff);
-  background-size: 150% 150%;
-  animation: animateGlow 10s ease infinite;
-}
-@keyframes animateGlow {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-/* @keyframes textColor {
-  0% {
-    color: #7e0fff;
-  }
-  50% {
-    color: #0fffc1;
-  }
-  100% {
-    color: #7e0fff;
-  } */
 }
