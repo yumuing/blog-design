@@ -1,3 +1,4 @@
+// 轮播图图片设置
 new SimSwiper("#swiper-demo", {
 	autoplay: 3000,
 	duration: 1000,

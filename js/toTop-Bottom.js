@@ -1,3 +1,4 @@
+// 设置回到顶部底部
 $(document).ready(function(){
 	var isTopClick = true;
 	$('#toTop').bind("click", function () {

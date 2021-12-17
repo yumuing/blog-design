@@ -1,3 +1,4 @@
+// 底部倒计时
 function secondToDate(second) {
 	if (!second) {
 		return 0;

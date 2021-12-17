@@ -1,3 +1,4 @@
+// 登录注册页数据校验
 $("#login").click(function(){
 	var name = $('#logName');
 	var pass = $('#logPass');

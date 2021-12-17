@@ -1,3 +1,4 @@
+// 设置轮播图
 (function(e, fn) {
 	"use strict";
 	if (e.__proto__ === undefined) {
