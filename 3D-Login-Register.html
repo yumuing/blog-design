@@ -4,84 +4,65 @@
 <head>
     <meta charset="utf-8">
     <title>yumuing's blog</title>
-	<!-- 使用前端框架 减低一点css设置工作量-->
-    <link rel="stylesheet" href="css/bootstrap-4.2.1.css">
-	<!-- 自定义 CSS 文件 -->
     <link rel="stylesheet" href="css/3D-Login-Register.css">
 	<script src="js/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
 <body>
-	
-    <div class="section dwo">
+    <div class="dwo">
         <div class="container">
-            <div class="row full-height justify-content-center">
-                <div class="col-12 text-center align-self-center py-5">
-                    <div class="section pb-5 pt-5 pt-sm-2 text-center">
-                        <input class="checkbox" type="checkbox" id="reg-log" name="reg-log">
-                        <div class="card-3d-wrap mx-auto">
-                            <div class="card-3d-wrapper bgk">
-                                <div class="card-front">
-                                    <div class="center-wrap">
-                                        <div class="section text-center">
-                                            <h4 class="mb-4 pb-3">登录</h4>
-                                            <div class="form-group">
-												<!-- autocomplete="off"不记录输入内容 -->
-                                                <input type="email" name="logemail" class="form-style" placeholder="请输入用户名" id="logName" autocomplete="off">
-                                                <!-- <i class="fa fa-user-circle-o" aria-hidden="true"></i> -->
-                                            </div>
-                                            <div class="form-group mt-2">
-                                                <input type="password" name="logpass" class="form-style" placeholder="请输入密码" id="logPass" autocomplete="off">
-                                                <!-- <i class="fa fa-unlock-alt" aria-hidden="true"></i> -->
-                                            </div>
-											<!-- 空格隔开多个 class 如：class="btn mt-4" 为 btn 和 mt-4两个类-->
-                                            <a href="index.html" class="btn mt-4" id="login">登录</a>
-                                            <div class="d-flex justify-content-between mt-4 text-left">
-                                                <div class="flex-fill">
-                                                    <p>没有帐号？<label for="reg-log">立即注册</p>
-                                                </div>
-                                                <div class="flex-fill text-right">
-                                                    <p><a href="javascript:" class="forgot link">忘记密码？</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-back">
-                                    <div class="center-wrap">
-                                        <div class="section text-center">
-                                            <h4 class="mb-4 pb-3">注册</h4>
-                                            <div class="form-group">
-                                                <input type="text" name="logname" class="form-style" placeholder="请输入用户名" id="registerName" autocomplete="off">
-                                                <!-- <i class="fa fa-user-circle-o" aria-hidden="true"></i> -->
-                                            </div>
-                                            <div class="form-group mt-2">
-                                                <input type="email" name="logemail" class="form-style" placeholder="请输入电子邮箱" id="registerMail" autocomplete="off">
-                                               <!-- <i class="fa fa-envelope" aria-hidden="true"></i> -->
-                                            </div>
-                                            <div class="form-group mt-2">
-                                                <input type="password" name="logpass" class="form-style" placeholder="请输入密码" id="registerPass" autocomplete="off">
-                                                <!-- <i class="fa fa-unlock-alt" aria-hidden="true"></i> -->
-                                            </div>
-											<div class="form-group mt-2">
-											    <input type="password" name="logpass" class="form-style" placeholder="请确认密码" id="affirmregisterPass" autocomplete="off">
-											    <!-- <i class="fa fa-unlock-alt" aria-hidden="true"></i> -->
-											</div>
-                                            <a class="btn mt-4" id="register">注册</a>
-                                            <p class="mb-0 mt-4 text-center">已有帐号？<label for="reg-log">立即登录</label></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	
+            <div class="full-height">
+				<input class="checkbox" type="checkbox" id="reg-log" name="reg-log">
+				<div class="card-3d-wrap mx-auto">
+				<div class="card-3d-wrapper bgk">
+					<div class="card-front">
+						<div class="center-wrap">
+							<div class="text-center">
+								<h4 class="pb-3">登录</h4>
+								<div class="form-group">
+									<!-- autocomplete="off"不记录输入内容 -->
+									<input type="text" name="logemail" class="form-style" placeholder="请输入用户名" id="logName" autocomplete="off">
+								</div>
+								<div class="form-group">
+									<input type="password" name="logpass" class="form-style" placeholder="请输入密码" id="logPass" autocomplete="off">
+								</div>
+								<!-- 空格隔开多个 class 如：class="btn mt-4" 为 btn 和 mt-4两个类-->
+								<div class="mt-4">
+									<a href="index.html" class="btn" id="login">登录</a>
+									<p>没有帐号？<label for="reg-log">立即注册</p>
+									<p><a href="javascript:" class="forgot link">忘记密码？</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-back">
+						<div class="center-wrap">
+							<div class="text-center">
+								<h4 class="pb-3">注册</h4>
+								<div class="form-group">
+									<input type="text" name="logname" class="form-style" placeholder="请输入用户名" id="registerName" autocomplete="off">
+								</div>
+								<div class="form-group">
+									<input type="email" name="logemail" class="form-style" placeholder="请输入电子邮箱" id="registerMail" autocomplete="off">
+								</div>
+								<div class="form-group">
+									<input type="password" name="logpass" class="form-style" placeholder="请输入密码" id="registerPass" autocomplete="off">
+								</div>
+								<div class="form-group">
+									<input type="password" name="logpass" class="form-style" placeholder="请确认密码" id="affirmregisterPass" autocomplete="off">
+								</div>
+								<div class="mt-4">
+									<a class="btn" id="register">注册</a>
+									<p>已有帐号？<label for="reg-log">立即登录</label></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script src="js/date-verification.js" type="text/javascript" charset="utf-8"></script>
-	
 </body>
 
 </html>
